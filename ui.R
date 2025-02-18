@@ -1,18 +1,19 @@
-# Define UI for app that draws a histogram ----
-ui <- page_sidebar(
-  # App title ----
-  title = "Hello Shiny!",
-  # Sidebar panel for inputs ----
-  sidebar = sidebar(
-    # Input: Slider for the number of bins ----
-    sliderInput(
-      inputId = "bins",
-      label = "Number of bins:",
-      min = 1,
-      max = 50,
-      value = 30
-    )
-  ),
-  # Output: Histogram ----
-  plotOutput(outputId = "distPlot")
-)
+###################
+# ui.R
+# 
+# Initializes the ui. 
+# Used to load in your header, sidebar, and body components.
+###################
+source('./components/header.R')
+source('./components/sidebar.R')
+source('./components/body.R')
+
+
+ui <- dashboardPage(
+  header = header,
+  sidebar =  sidebar,
+  body = body,
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "dark_mode.css")
+  )
+  )

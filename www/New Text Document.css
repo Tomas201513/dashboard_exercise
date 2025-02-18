@@ -1,0 +1,35 @@
+/* Get a fancy font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body {
+  background-color: black;
+  color: white; /* text color */
+}
+
+/* Change header text to imported font */
+h2 {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: #474747;
+}
+
+/* Change the color of the input box */
+.shiny-input-container input {
+  background-color: #f05b55;
+  color: white;
+}
+
+/* Change the color of the input box when it is focused */
+.shiny-input-container input:focus {
+  background-color: ##f05b55;
+  color: white;
+}
+
+/* Change the color of the input box when it is hovered */
+.shiny-input-container input:hover {
+  background-color: #f05b55;
+  color: white;
+}
